@@ -20,20 +20,13 @@
     </head>
     <body>
 
-        <div data-picture data-alt="Callampas, probablemente Deconica coprophila, encontradas en la Cordillera Nevada, Lago Ranco, Chile.">
+        <div data-picture data-alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
             <!-- la primera opción, móvil primero, sin match-media -->
-            <div data-src="imgs/callampas-430.jpg"></div>
-            <!-- Opción dos, cualquier cosa más grande de 480px de ancho se gana una foto tamaño mediano -->
-            <div data-src="imgs/callampas-570.jpg"  data-media="(min-width: 480px)"></div>
-            <!-- Opción tres, cualquier cosa más grande de 760px de ancho (como un iPad en vertical): se gana una foto tamaño tableta -->
-            <div data-src="imgs/callampas-770.jpg"  data-media="(min-width: 760px)"></div>
-            <!-- Opción cuatro, cualquier cosa más grande de 960px de ancho (como un iPad en horizontal): se gana una foto tamaño escritorio -->
-            <div data-src="imgs/callampas-1024.jpg" data-media="(min-width: 960px)"></div>
-            <!-- Opción cinco, cualquier cosa más grande de 1280px de ancho se gana una foto tamaño gigante -->
-            <div data-src="imgs/callampas-2000.jpg" data-media="(min-width: 1280px)"></div>
-            <!-- Contenido alternativo para navegadores sin JS. La misma fuente de la imagen inicial. -->
+            <div data-src="imgs/flores-small.jpg"></div>
+            <!-- Opción dos, sólo si detectamos resolución alta cargar la versión 2x -->
+            <div data-src="imgs/flores-small-2x.jpg"  data-media="(min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)"></div>
             <noscript>
-                <img src="imgs/callampas-430.jpg" alt="Callampas, probablemente Deconica coprophila, encontradas en la Cordillera Nevada, Lago Ranco, Chile.">
+                <img src="imgs/flores-small.jpg" alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
             </noscript>
         </div>
 
