@@ -19,7 +19,66 @@
         </style>
     </head>
     <body>
+        <h1><a href="http://baamenabar.github.com/article-picturefill/v1.html">Imagen 1</a></h1>
+        <figure>
+            <div data-picture data-alt="Callampas, probablemente Deconica coprophila, encontradas en la Cordillera Nevada, Lago Ranco, Chile.">
+                <!-- la primera opción, móvil primero, sin match-media -->
+                <div data-src="imgs/callampas-430.jpg"></div>
+                <!-- Opción dos, cualquier cosa más grande de 480px de ancho se gana una foto tamaño mediano -->
+                <div data-src="imgs/callampas-570.jpg"  data-media="(min-width: 480px)"></div>
+                <!-- Opción tres, cualquier cosa más grande de 760px de ancho (como un iPad en vertical): se gana una foto tamaño tableta -->
+                <div data-src="imgs/callampas-770.jpg"  data-media="(min-width: 760px)"></div>
+                <!-- Opción cuatro, cualquier cosa más grande de 960px de ancho (como un iPad en horizontal): se gana una foto tamaño escritorio -->
+                <div data-src="imgs/callampas-1024.jpg" data-media="(min-width: 960px)"></div>
+                <!-- Opción cinco, cualquier cosa más grande de 1280px de ancho se gana una foto tamaño gigante -->
+                <div data-src="imgs/callampas-2000.jpg" data-media="(min-width: 1280px)"></div>
+                <!-- Contenido alternativo para navegadores sin JS. La misma fuente de la imagen inicial. -->
+                <noscript>
+                    <img src="imgs/callampas-430.jpg" alt="Callampas, probablemente Deconica coprophila, encontradas en la Cordillera Nevada, Lago Ranco, Chile.">
+                </noscript>
+            </div>
+            <figcaption> Un ejemplo simple con una foto de callampas, probablemente Deconica coprophila, encontradas en la Cordillera Nevada, Lago Ranco, Chile. </figcaption>
+        </figure>
+        <h1><a href="http://baamenabar.github.com/article-picturefill/v2.html">Imagen 2</a></h1>
+        <figure>
+            <div data-picture data-alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+                <!-- la primera opción, móvil primero, sin match-media -->
+                <div data-src="imgs/flores-small.jpg"></div>
+                <!-- Opción dos, sólo si detectamos resolución alta cargar la versión 2x -->
+                <div data-src="imgs/flores-small-2x.jpg"    data-media="(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)"></div>
+                <noscript>
+                    <img src="imgs/flores-small.jpg" alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+                </noscript>
+            </div>
+            <figcaption> En este ejemplo probamos la detección de resolución solamente con una foto de un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile. </figcaption>
+        </figure>
+        <h1><a href="http://baamenabar.github.com/article-picturefill/v3.html">Imagen 3</a></h1>
+        <figure>
+            <div data-picture data-alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+                <!-- la primera opción, móvil primero, sin match-media -->
+                <div data-src="imgs/flores-small.jpg"></div>
+                <div data-src="imgs/flores-small-2x.jpg"    data-media="(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)"></div>
 
+                <div data-src="imgs/flores-medium.jpg"      data-media="(min-width: 480px)"></div>
+                <div data-src="imgs/flores-medium-2x.jpg"   data-media="(min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                        (min-width: 480px) and (min-resolution: 144dpi)"></div>
+
+                <div data-src="imgs/flores-big.jpg"         data-media="(min-width: 780px)"></div>
+                <div data-src="imgs/flores-big-2x.jpg"      data-media="(min-width: 780px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                        (min-width: 780px) and (min-resolution: 144dpi)"></div>
+
+                <div data-src="imgs/flores-huge.jpg"        data-media="(min-width: 1280px)"></div>
+                <div data-src="imgs/flores-full-full.jpg"   data-media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                        (min-width: 1280px) and (min-resolution: 144dpi)"></div>
+                <!--[if (lt IE 9) & (!IEMobile)]>
+                    <div data-src="imgs/flores-big.jpg"></div>
+                <![endif]-->
+                <noscript>
+                    <img src="imgs/flores-small.jpg" alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+                </noscript>
+            </div>
+            <figcaption> En este ejemplo probamos tiramos toda la carne a la parrilla. </figcaption>
+        </figure>
         <h1>Pruebas de Picturefill: Un <i lang="en">polyfill</i> para el elemento &lt;picture&gt;</h1>
 
         <p>Para más información sobre picturefill: <a href="http://github.com/scottjehl/picturefill">Ver home del proyecto.</a></p>
