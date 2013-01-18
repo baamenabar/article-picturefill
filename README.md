@@ -1,8 +1,6 @@
 Archivos fuente del artículo [Imágenes responsivas con Picturefill](http://code.medula.cl/article_Imagenes-responsivas-con-picturefill.html)
 ===================================================================
 
-Material y demos para el artículo sobre picturefill.
-
 Hay dos _branches_ con diferentes estados:
 
 Master Es el estado final con los códigos fuente definitivos del ejemplo funcionando.
