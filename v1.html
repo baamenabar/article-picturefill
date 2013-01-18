@@ -20,11 +20,23 @@
     </head>
     <body>
 
+        <div data-picture data-alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+            <!-- la primera opción, móvil primero, sin match-media -->
+            <div data-src="imgs/flores-small.jpg"></div>
+            <!-- Opción dos, cualquier cosa más grande de 400px de ancho se gana una foto tamaño mediano -->
+            <div data-src="imgs/flores-medium.jpg"  data-media="(min-width: 480px)"></div>
+            <!-- Opción tres, cualquier cosa más grande de 960px de ancho se gana una foto tamaño escritorio -->
+            <div data-src="imgs/flores-big.jpg"     data-media="(min-width: 960px)"></div>
+            <!-- Contenido alternativo para navegadores sin JS. La misma fuente de la imagen inicial. -->
+            <noscript>
+                <img src="imgs/flores-small.jpg" alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile">
+            </noscript>
+        </div>
+
         <h1>Pruebas de Picturefill: Un <i lang="en">polyfill</i> para el elemento &lt;picture&gt;</h1>
 
         <p>Para más información sobre picturefill: <a href="http://github.com/scottjehl/picturefill">Ver home del proyecto.</a></p>
         <p>Para más información sobre este repositorio: <a href="http://code.medula.cl/article_Imagenes-responsivas-con-picturefill.html">Ver página del artículo.</a></p>
-
         
     </body>
 </html>
