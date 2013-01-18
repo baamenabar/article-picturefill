@@ -1,10 +1,8 @@
 Archivos fuente del artículo [Imágenes responsivas con Picturefill](http://code.medula.cl/article_Imagenes-responsivas-con-picturefill.html)
 ===================================================================
 
-Material y demos para el artículo sobre picturefill.
+Esta es la rama (branch) `gh-pages` para publicar los demos.
 
-Hay varios Branches con diferentes estados:
+El index.html tiene el demo final.
 
-Master Es el estado final con los códigos fuente definitivos del ejemplo funcionando.
-
-_Mise en place_ Son los archivos con los que partiremos.
+v1.html tiene el demo inicial, simple.
