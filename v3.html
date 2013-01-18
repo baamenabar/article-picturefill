@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 8 ]>    <html class="ie ie7 no-js" lang="es"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="es"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="es"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="es"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ejemplo nº3 de Picturefill</title>
+        <script src="matchmedia.js"></script>
+        <script src="modernizr.custom.89870.js"></script>
+        <script src="picturefill.js"></script>
+        <!-- [if lt IE 9]>
+        <script src="css3-mediaqueries.js"></script>
+        <![endif]-->
+        <style>
+            body { font-family: sans-serif }
+            img {  max-width: 100% }
+        </style>
+    </head>
+    <body>
+
+        <div data-picture data-alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+            <!-- la primera opción, móvil primero, sin match-media -->
+            <div data-src="imgs/flores-small.jpg"></div>
+            <div data-src="imgs/flores-small-2x.jpg"    data-media="(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)"></div>
+
+            <div data-src="imgs/flores-medium.jpg"      data-media="(min-width: 480px)"></div>
+            <div data-src="imgs/flores-medium-2x.jpg"   data-media="(min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                    (min-width: 480px) and (min-resolution: 144dpi)"></div>
+
+            <div data-src="imgs/flores-big.jpg"         data-media="(min-width: 780px)"></div>
+            <div data-src="imgs/flores-big-2x.jpg"      data-media="(min-width: 780px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                    (min-width: 780px) and (min-resolution: 144dpi)"></div>
+
+            <div data-src="imgs/flores-huge.jpg"        data-media="(min-width: 1280px)"></div>
+            <div data-src="imgs/flores-full-full.jpg"   data-media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                    (min-width: 1280px) and (min-resolution: 144dpi)"></div>
+            <!--[if (lt IE 9) & (!IEMobile)]>
+                    <div data-src="imgs/flores-big.jpg"></div>
+                <![endif]-->
+            <noscript>
+                <img src="imgs/flores-small.jpg" alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
+            </noscript>
+        </div>
+
+        <h1>Pruebas de Picturefill: Un <i lang="en">polyfill</i> para el elemento &lt;picture&gt;</h1>
+
+        <p>Para más información sobre picturefill: <a href="http://github.com/scottjehl/picturefill">Ver home del proyecto.</a></p>
+        <p>Para más información sobre este repositorio: <a href="http://code.medula.cl/article_Imagenes-responsivas-con-picturefill.html">Ver página del artículo.</a></p>
+        
+    </body>
+</html>
