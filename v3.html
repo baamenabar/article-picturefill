@@ -23,8 +23,19 @@
         <div data-picture data-alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
             <!-- la primera opción, móvil primero, sin match-media -->
             <div data-src="imgs/flores-small.jpg"></div>
-            <!-- Opción dos, sólo si detectamos resolución alta cargar la versión 2x -->
             <div data-src="imgs/flores-small-2x.jpg"    data-media="(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)"></div>
+
+            <div data-src="imgs/flores-medium.jpg"      data-media="(min-width: 480px)"></div>
+            <div data-src="imgs/flores-medium-2x.jpg"   data-media="(min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                    (min-width: 480px) and (min-resolution: 144dpi)"></div>
+
+            <div data-src="imgs/flores-big.jpg"         data-media="(min-width: 780px)"></div>
+            <div data-src="imgs/flores-big-2x.jpg"      data-media="(min-width: 780px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                    (min-width: 780px) and (min-resolution: 144dpi)"></div>
+
+            <div data-src="imgs/flores-huge.jpg"        data-media="(min-width: 1280px)"></div>
+            <div data-src="imgs/flores-full-full.jpg"   data-media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), 
+                                                                    (min-width: 1280px) and (min-resolution: 144dpi)"></div>
             <noscript>
                 <img src="imgs/flores-small.jpg" alt="Un manchón de flores Calceolaria filicaulis, en la Cordillera Nevada, Lago Ranco, Chile.">
             </noscript>
